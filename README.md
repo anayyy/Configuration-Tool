@@ -27,8 +27,7 @@ Thats all for the mock server!!
 
 # Frontend
 
-The frontend is implemented using a React App. The mock server API endpoint is [http://127.0.0.1:5000/config](http://127.0.0.1:5000/config) , if you want to change this, change the value of const ENDPOINT in const.js file inside client/src folder.  
-You need node.js installed to run this application.
+The frontend is implemented using a React App. The mock server API endpoint is [http://127.0.0.1:5000/config](http://127.0.0.1:5000/config) , if you want to change this, change the value of const ENDPOINT in const.js file inside client/src folder. You need node.js installed to run this application.
 
 To start the app write the following commands one by one using the terminal inside client folder.
 

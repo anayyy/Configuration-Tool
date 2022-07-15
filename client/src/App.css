@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.mainHeading{
+    border-bottom: 2px solid gray;
+    margin-top: 0;
+    padding: 1vmax 1vmax;
+    background-color: black;
+    color: wheat;
+    font-family: 'Comfortaa';
+    
+}
+
+.mainContainer{
+    
+    margin: 0;
+    padding: 5vmax;
+    
+}
+
+
+.formHeadingButton{
+    width: 100%;
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 10px 0;
+    font-size: 2rem;
+    transition: 0.3s;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+
+.formBody{
+    transition: 0.3s;
+    display: none;
+    padding: 3vmax;
+    border: 2px solid black;
+    background-color: beige;
+}
+
+.attributes{
+   align-items: center;
+   align-content: center;
+   margin-bottom: 1rem;
+    
+}
+.attributeLabel{}
+label{
+    display: inline-flex;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    width: 48%;
+}
+.attributeInput{}
+input{
+    display: inline-flex;
+    background-color: aliceblue;
+    width: 48%; 
+    padding: 5px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+
+
+.formControl{
+    padding-top: 1rem;
+    display: flex;
+  align-items: right;
+  justify-content: right;
+  
+}
+
+.saveButton{
+    background-color: white;
+    font-size: 1.6rem;
+    transition: 0.3s;
+    padding: .5rem 1rem;
+    
+    
+    margin-right: .5rem;
+}
+.resetButton{
+    background-color: white;
+    font-size: 1.6rem;
+    transition: 0.3s;
+    padding: .5rem 1rem;
+    
+    margin-left: .5rem;
+
+}
+.saveButton:hover{
+    background-color: aquamarine;
+}
+.resetButton:hover{
+    background-color: lightcoral;
+}

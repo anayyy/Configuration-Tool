@@ -29,7 +29,7 @@ Thats all for the mock server!!
 
 The frontend is implemented using a React App. The mock server API endpoint is [http://127.0.0.1:5000/config](http://127.0.0.1:5000/config) , if you want to change this, change the value of const ENDPOINT in const.js file inside client/src folder.
 
-To start the app write the following command using the terminal inside client folder.
+To start the app write the following command using the terminal inside client folder(after extracting the zip file).
 
 ```bash
 npm start

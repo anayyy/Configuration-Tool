@@ -1,7 +1,5 @@
-#Configuration Tool
+# Configuration Tool
 ***By Ananya***
-
-[GitHub - anayyy/Configuration-Tool](https://github.com/anayyy/Configuration-Tool)
 
 Clone the above repository to setup the configuration tool
 
@@ -25,15 +23,11 @@ flask run
 
 If everything goes fine the server will start running on [http://127.0.0.1:5000/](http://127.0.0.1:5000/) . The API endpoint however is [http://127.0.0.1:5000/config](http://127.0.0.1:5000/config) as requested.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6a042eb1-7414-4d95-bca8-a8d58c05b411/Untitled.png)
-
 Thats all for the mock server!!
 
 # Frontend
 
 The frontend is implemented using a React App. The mock server API endpoint is [http://127.0.0.1:5000/config](http://127.0.0.1:5000/config) , if you want to change this, change the value of const ENDPOINT in const.js file inside client/src folder.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c276d5cf-03dd-4746-a49e-993b3e178cbf/Untitled.png)
 
 To start the app write the following command using the terminal inside client folder.
 
@@ -45,7 +39,8 @@ If everything goes well the react app should start working.
 
 # Screenshot
 
-![A full page screen shot of the webpage.](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/de96d22e-f274-4e4a-9d08-1f1d3ca0e0ad/Untitled.png)
+![image](https://user-images.githubusercontent.com/77318648/179253688-a7915d59-085b-45a7-84a3-3621c3bddc3e.png)
+
 
 A full page screen shot of the webpage.
 

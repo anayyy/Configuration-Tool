@@ -37,6 +37,12 @@ npm start
 
 If everything goes well the react app should start working.
 
+## Alternative Frontend
+
+Just click on the given link after setting up the flask mock server.
+
+[https://config-tool.netlify.app/](https://config-tool.netlify.app/)
+
 # Screenshot
 
 ![image](https://user-images.githubusercontent.com/77318648/179253688-a7915d59-085b-45a7-84a3-3621c3bddc3e.png)

@@ -29,13 +29,22 @@ const BigTable = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        
         var inputNow = [];
         var allInputs = [];
         var x;
         inputNow = document.getElementsByTagName("input");
+
         for (x = 0; x < inputNow.length; x++) {
-            allInputs.push([inputNow[x].name, inputNow[x].value, inputNow[x].type]);
+            allInputs.push([inputNow[x].name, inputNow[x].value, inputNow[x].type, inputNow[x].id]);
+            if(allInputs[x][1]===""){
+                alert(`Please fill ${allInputs[x][3]}`);
+                return false;
+            }
         }
+
+
 
 
         var result = data;

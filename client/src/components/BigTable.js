@@ -27,51 +27,25 @@ const BigTable = () => {
     }, []);
 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
-        
+        //to check for null values and alert 
         var inputNow = [];
         var allInputs = [];
         var x;
         inputNow = document.getElementsByTagName("input");
-
         for (x = 0; x < inputNow.length; x++) {
-            allInputs.push([inputNow[x].name, inputNow[x].value, inputNow[x].type, inputNow[x].id]);
-            if(allInputs[x][1]===""){
-                alert(`Please fill ${allInputs[x][3]}`);
+            allInputs.push([inputNow[x].value, inputNow[x].id]);
+            if(allInputs[x][0]===""){
+                alert(`Please fill ${allInputs[x][1]}`);
                 return false;
             }
         }
 
 
-
-
-        var result = data;
-        x = 0;
-
-        Object.entries(result).forEach(configs => {
-            Object.entries(configs[1]).forEach(item => {
-                if (allInputs[x][2] === 'number') {
-                    item[1].value = Number(allInputs[x][1]);
-                }
-                else {
-
-                    var arrOfStr = allInputs[x][1].split(',');
-                    const arrOfNum = arrOfStr.map(str => {
-                        return Number(str);
-                    });
-                    item[1].value = arrOfNum;
-                }
-
-                x = x + 1;
-            })
-        })
-
-
-        console.log(result)
-
-        var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(result));
+        //to download the updated file
+        var dataStr = "data:text/json;charset=utf-8," +  encodeURIComponent(JSON.stringify(data));
         var dlAnchorElem = document.getElementById('downloadAnchorElem');
         dlAnchorElem.setAttribute("href", dataStr);
         dlAnchorElem.setAttribute("download", "output.json");
@@ -97,7 +71,7 @@ const BigTable = () => {
             <form onSubmit={handleSubmit}>
                 {
                     Object.entries(data).map((item, index) => (
-                        <Form data={item} key={index} />
+                        <Form configObj={item} key={index} data={data} setData={setData} />
                     ))
                 }
                 <div className='formControl'>
@@ -105,7 +79,7 @@ const BigTable = () => {
                 <button type='reset' className='resetButton'>Reset</button>
                 </div>
             </form>
-            <a id="downloadAnchorElem" href="ok" style={{ display: 'none' }}>ok</a>
+            <a id="downloadAnchorElem" href="hi" style={{ display: 'none' }}>made by anayyy</a>
         </div>
         </div> : <h1>Loading...refresh to retry</h1>}
         </div>
